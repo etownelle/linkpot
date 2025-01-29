@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="911 EXPRESS TECH offers fast and reliable computer and mobile repair services in Radcliff, KY. Contact us today!">
+    <meta name="keywords" content="computer repair, laptop repair, mobile repair, data recovery, Radcliff KY, Fort Knox tech support">
+    <title>911 EXPRESS TECH - Service Request Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: left;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .submit-btn {
+            display: inline-block;
+            background: red;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #222;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function confirmSubmission(event) {
+            event.preventDefault();
+            if (confirm('Are you sure you want to submit this form?')) {
+                document.getElementById('serviceRequestForm').submit();
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>911 EXPRESS TECH - Service Request Form</h1>
+    </header>
+    <div class="container">
+        <form id="serviceRequestForm" onsubmit="confirmSubmission(event)">
+            <label for="firstName">1. First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">2. Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="emailAddress">3. Email Address:</label>
+            <input type="email" id="emailAddress" name="emailAddress" required>
+
+            <label for="customerPhone">4. Customer Phone:</label>
+            <input type="tel" id="customerPhone" name="customerPhone" required>
+
+            <label>5. Device Type:</label>
+            <input type="checkbox" name="deviceType" value="laptop"> Laptop<br>
+            <input type="checkbox" name="deviceType" value="desktop"> Desktop<br>
+            <input type="checkbox" name="deviceType" value="mobilePhone"> Mobile Phone<br>
+            <input type="checkbox" name="deviceType" value="tablet"> Tablet<br>
+            <input type="checkbox" name="deviceType" value="other"> Other
+
+            <label for="deviceMake">6. Device Make:</label>
+            <select id="deviceMake" name="deviceMake" required>
+                <option value="">Select a Brand</option>
+                <option value="Dell">Dell</option>
+                <option value="Acer">Acer</option>
+                <option value="Asus">Asus</option>
+                <option value="Apple">Apple</option>
+                <option value="HP">HP</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="IBM">IBM</option>
+                <option value="Microsoft">Microsoft</option>
+                <option value="Razer Inc.">Razer Inc.</option>
+                <option value="Toshiba">Toshiba</option>
+                <option value="MSi">MSi</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Custom Build">Custom Build</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="deviceModel">7. Device Model#:</label>
+            <input type="text" id="deviceModel" name="deviceModel" required>
+
+            <label for="descriptionOfProblem">8. Description of Problem:</label>
+            <textarea id="descriptionOfProblem" name="descriptionOfProblem" required></textarea>
+
+            <label>9. How did you hear about us?</label>
+            <input type="radio" name="referralSource" value="googleSearch"> Google Search<br>
+            <input type="radio" name="referralSource" value="socialMedia"> Social Media<br>
+            <input type="radio" name="referralSource" value="wordOfMouth"> Word of Mouth<br>
+            <input type="radio" name="referralSource" value="signage"> Signage<br>
+            <input type="radio" name="referralSource" value="other"> Other
+
+            <p><strong>Payment Notice:</strong> We accept all major credit cards. All card transactions will incur a 3% processing fee. Paying with cash has no additional fees.</p>
+
+            <p><strong>Disclaimer:</strong> By submitting this form, you agree to provide accurate information and understand that any repairs or services performed are subject to our terms and conditions. Data loss during repairs is not our responsibility unless data recovery services are explicitly requested and agreed upon.</p>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Checks your computer for the most common problems.</h2>
+        <p>It is free, fast and easy to use, anonymous and safe.</p>
+        <a href="ScanCircleD_en.exe" download class="submit-btn">Download ScanCircle</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 911 EXPRESS TECH. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
